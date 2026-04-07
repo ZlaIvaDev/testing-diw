@@ -1,0 +1,26 @@
+{
+  "name": "testing-diw",
+  "version": "1.0.0",
+  "description": "testing witj jest",
+  "main": "jav.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ZlaIvaDev/testing-diw.git"
+  },
+  "keywords": [
+    "diwa"
+  ],
+  "author": "vanz",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ZlaIvaDev/testing-diw/issues"
+  },
+  "homepage": "https://github.com/ZlaIvaDev/testing-diw#readme",
+  "devDependencies": {
+    "@babel/preset-env": "^7.29.2",
+    "jest": "^30.3.0"
+  }
+}

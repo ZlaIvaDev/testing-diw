@@ -30,11 +30,30 @@ const calculator = {
 
 };
 
+let alphabet = 'abcdefghijklmnopqrstuvwxyx';
+let cipher = 'zxcvbnmqwertyuiopasdfghjkl';
+
+function caesarCipher(word) {
+  
+    let originalIndex = [];
+    let cipheredWord = []
+
+    for (e of word) {
+        originalIndex.push(alphabet.indexOf(e))
+        }
+
+    for (e of originalIndex) {
+        cipheredWord.push(cipher.charAt(e))
+    }
+
+        return(cipheredWord.join(''))
+
+}
 
 
 
 
-module.exports = { capitalize, reversed, calculator };
+module.exports = { capitalize, reversed, calculator, caesarCipher };
 
 
 

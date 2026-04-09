@@ -50,21 +50,46 @@ function caesarCipher(word) {
 
 }
 
+function checkUpper(a) {
+    if (a == a.toUpperCase()) {
+        console.log(true)
+    } else {
+        console.log(false)
+    }
+}
 
+const nekiArej = [1,8,3,4,2,6];
+function analyzeArray(arr) {
+    const length = arr.length
+    const average = arr.reduce((a,b) => a+b,0) / length;
+    const minVal = Math.min(...arr)
+    const maxVal = Math.max(...arr)
+    
 
+    const object = {
+        average : average,
+        min: minVal,
+        max: maxVal,
+        length: length,
+    }
+    return object
 
-module.exports = { capitalize, reversed, calculator, caesarCipher };
+    
+};
 
-
-
+module.exports = { capitalize, reversed, calculator, caesarCipher, analyzeArray };
 
 
 /*
-A reverseString function that takes a string and returns it reversed.
-A calculator object that contains functions for the basic operations:
-add, subtract, divide, and multiply. Each of these functions should take two numbers and return the correct calculation.
+An analyzeArray function that takes an array of numbers
+ and returns an object with the following properties: average, min, max, and length.
 
+const object = analyzeArray([1,8,3,4,2,6]);
 
-
-
+object == {
+   average: 4,
+   min: 1,
+   max: 8,
+   length: 6
+};
 */

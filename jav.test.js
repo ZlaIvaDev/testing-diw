@@ -1,4 +1,4 @@
-const { capitalize, reversed, calculator, caesarCipher } = require('./jav');
+const { capitalize, reversed, calculator, caesarCipher, analyzeArray } = require('./jav');
 
 test('capitalizes first letter, ex: cao -> Cao ', () =>{
     expect(capitalize('aloha')).toBe('Aloha')
@@ -18,4 +18,12 @@ test('celculator: add(1,1) -> should equal 2, .multiply(2,2) -> should equal 4 e
 test("takes string and returns a ciphered ver. ex: 'koko' should return 'riri', 'abc' should return 'zxc' ", () => {
     expect(caesarCipher('abc')).toBe('zxc')
     expect(caesarCipher('koko')).toBe('riri')
+})
+
+test("takes an array, and returns an object with average, min, max and length", () => {
+    expect(analyzeArray([1,8,3,4,2,6])).toEqual({
+        average: 4,
+        min: 1,
+        max: 8,
+        length: 6})
 })
